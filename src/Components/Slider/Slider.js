@@ -14,18 +14,7 @@ import radhe from '../../images/radhe.jpg';
 import b83 from '../../images/b83.jpg';
 import b5 from '../../images/b5.jpeg';
 import kgf from '../../images/kgf.jpg';
-import wonder_woman_back from '../Page2/MovieImages/wonder-woman-back.jpg'
 import toofan_back from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
-// import toofan from '../Page2/MovieImages/toofan-back.jpg'
 
 
 const Slider = () => {
@@ -74,12 +63,12 @@ const Slider = () => {
                     tomato:'15%'
                         }
                     }}>
-                <img src={shershaan}/></Link>
-                <img src={bell_bottom}/>
-                <img src={radhe}/>
-                <img src={b83}/>
-                <img src={b5}/>
-                <img src={kgf}/>
+                <img alt="" src={shershaan}/></Link>
+                <img alt="" src={bell_bottom}/>
+                <img alt="" src={radhe}/>
+                <img alt="" src={b83}/>
+                <img alt="" src={b5}/>
+                <img alt="" src={kgf}/>
                 </div>
             </div>
         </div>

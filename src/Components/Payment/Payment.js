@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import  './Payment.css';
+import React from 'react'
+import  './Payment.css'
 import Header from '../../CoreComponents/Header/Header.js'
 import Footer from '../../CoreComponents/Footer/Footer.js'
 
@@ -7,7 +7,7 @@ export default function PaymentComponent(props) {
     const {name, total, nooftickets, ticketprice, ticketname} = props.match.params;
     const submitpayment = (e) => {
         e.preventDefault();
-        props.history.push('/thankyou'+`/${total}`);
+        props.history.push('/thankyou/'+`${total}`);
     }
 
     return (

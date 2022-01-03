@@ -1,4 +1,4 @@
-import react, {useState} from 'react'
+import {useState} from 'react'
 import Header from '../../CoreComponents/Header/Header'
 import Footer from '../../CoreComponents/Footer/Footer'
 import './BookTicket.css'

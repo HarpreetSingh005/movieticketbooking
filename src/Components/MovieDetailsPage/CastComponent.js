@@ -1,10 +1,10 @@
-import react from 'react'
 import './MovieDetails.css'
 
 const CastComponent = (props) => {
     return(
         <div className="card border border-0" style={{width: 150+'px'}}>
                 <img className="card-img-top rounded-circle" 
+                alt={props.name}
                 src={props.image} 
                 style={{width: 100+'%'}}/>
                 <div className="card-body">

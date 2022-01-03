@@ -1,10 +1,9 @@
-import react, {useEffect} from 'react'
+import {useEffect} from 'react'
 import './MovieDetails.css'
 import tomatoimage from './Images/tomato.png'
 import imdb from './Images/IMDB.png'
 import star from './Images/star.svg'
 import CastComponent from './CastComponent'
-import Header from '../../CoreComponents/Header/Header'
 import Footer from '../../CoreComponents/Footer/Footer'
 import {Link} from "react-router-dom"
 
@@ -19,7 +18,7 @@ const MovieDetails =(props) =>{
         <div style={{fontFamily:'Segoe UI'}}>
             <div className="top" style={{backgroundImage: `linear-gradient(90deg,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(${cover})`}}>
 		
-        <img src={image} className=""/>
+        <img src={image} alt="" className=""/>
         <div className="mname">
             <h2>{name}</h2>
             English, Hindi, Tamil, Telugu<br/><br/>
