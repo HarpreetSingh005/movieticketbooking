@@ -58,7 +58,7 @@ const BookTicket = (props) => {
         return(
             <div className='bookticket' >
                 <Header />
-                <div style={{backgroundImage: `url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')`, backgroundSize:'cover', padding: '50px 0px'}}>
+                <div style={{backgroundImage: `url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')`, backgroundSize:'cover', padding: '50px 0px',marginBottom:'-100px'}}>
                 <form style={{width: 28+'%', margin: '0px auto'}} onSubmit={submittheform}>
                     <h1>BOOKING DETAILS</h1> 
                     <hr/>
