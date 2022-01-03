@@ -1,0 +1,38 @@
+
+/* body{
+	margin-left:7%;
+	font-family: 'Lobster', cursive;
+} */
+
+.top{
+	
+    height:510px;
+	display:flex;
+}
+
+
+.top img {
+	position:absolute;
+	margin-left:120px;
+	margin-top:80px;
+	width:265px;
+	height:400px;
+	border-radius:10px;
+}
+
+.mname {
+	position:relative;
+	margin-left:460px;
+	margin-top:140px;
+	color:white;
+}
+
+.top button{
+	border-radius:10px;
+	font-size:20px;
+	border:0;
+}
+
+.card{
+	margin-right:10px;
+}

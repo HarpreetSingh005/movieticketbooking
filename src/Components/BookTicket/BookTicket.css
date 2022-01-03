@@ -1,0 +1,199 @@
+#email{
+    width: 98%;
+    height: 30px;
+}
+
+.email{
+    margin-top: 20px;
+}
+
+.email label{
+    color: rgb(177, 177, 177);
+}
+.email input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+}
+#booking{
+    width: 98%;
+    height: 33px;
+}
+
+.booking-date{
+    margin-top: 20px;
+}
+
+.booking-date label{
+    color: rgb(177, 177, 177);
+}
+.booking-date input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+}
+#seat{
+    width: 98%;
+    height: 40px;
+}
+
+.seat-category{
+    margin-top: 20px;
+}
+
+.seat-category label{
+    color: rgb(177, 177, 177);
+}
+.seat-category select{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.seat-category option{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tickets{
+    width: 100px;
+    height: 33px;
+}
+
+.no-of-tickets{
+    margin-top: 20px;
+}
+
+.no-of-tickets label{
+    color: rgb(177, 177, 177);
+}
+.no-of-tickets input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+}
+#total{
+    width: 98%;
+    height: 33px;
+}
+
+.total{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.total label{
+    color: rgb(177, 177, 177);
+    font-size: 40px;
+    color: black;
+}
+.total input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 20px;
+}
+#movie{
+    width: 98%;
+    height: 30px;
+}
+.movie{
+    margin-top: 20px;
+}
+
+.movie label{
+    color: rgb(177, 177, 177);
+}
+.movie input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+
+.bookticket form{
+    box-shadow: 1px 1px 10px gray;
+    padding: 10px 30px 30px 30px;
+    background-color: white;
+}
+.bookticket form h1{
+    color: rgb(121, 121, 121);
+}
+.bookticket hr{
+    color: rgb(168, 168, 168);
+}
+#name, #number{
+    width: 98%;
+    height: 30px;
+}
+
+.name, .number, .cvv, .date{
+    margin-top: 20px;
+}
+
+.name label{
+    color: rgb(177, 177, 177);
+}
+.name input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+}
+.number label{
+    color: rgb(177, 177, 177);
+}
+.number input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+}
+.cvv label{
+    color: rgb(177, 177, 177);
+}
+.cvv input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+}
+.date label{
+    color: rgb(177, 177, 177);
+}
+.date input{
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cvv input{
+    width: 80px;
+    height: 30px;
+}
+
+.date{
+    margin-left: 20px;
+}
+
+.date input{
+    width: 265px;
+    height: 35px;
+    padding: 5px;
+}
+
+.book-btn{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 66, 128,0.8);
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    transition: ease-in 0.2s;
+}
+.book-btn:hover{
+    background-color: rgb(4, 53, 99);
+}

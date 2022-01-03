@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./project.css">
+    <link rel="stylesheet" href="./book-ticket.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--Bootstrap Links-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<!--React Links-->
+	<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	
+    <title>Prime Cinema | Book Tickets</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="./project.html"><img src="./logo.png" alt="Can't Load"></a>
+        </div>
+
+    </nav>
+
+    <form action="./payment.html" style="width: 28%; margin: 50px auto;">
+        <h1>BOOKING DETAILS</h1> 
+        <hr>
+        <div class="name">
+            <label for="name">FULL NAME</label><br>
+            <input type="text" id="name" name="name" placeholder="Johny Jain" required><br>
+        </div>
+        <div class="number">
+            <label for="number">PHONE NUMBER</label><br>
+            <input type="text" id="number" name="card-number"  placeholder="0123456789" maxlength="10" required >
+        </div>
+            <div class="email">
+                <label for="email">EMAIL</label><br>
+                <input type="email" id="email" name="email" placeholder="johny@xyz.com" required>
+            </div>
+            <div class="movie">
+                <label for="movie">MOVIE</label><br>
+                <input type="text" id="movie" disabled>
+            </div>
+            <div class="booking-date">
+                <label for="booking">DATE</label><br>
+                <input type="date" id="booking" name="booking-date" required>
+            </div>
+            <div class="seat-category">
+                <label for="seat">SEAT CATEGORY</label><br>
+                <select name="seat" id="seat" onchange="noTickets()">
+                    <option value="999" style="background-color: #E5E4E2;">PLATINUM - ₹ 999</option>
+                    <option value="799" style="background-color: rgb(255, 227, 70);">GOLD - ₹ 799</option>
+                    <option value="499" style="background-color: burlywood;">BRONZE - ₹ 499</option>
+                </select>
+            </div>
+            <div style="display: flex; align-items: flex-end;">
+                <div class="no-of-tickets">
+                    <label for="tickets">NUMBER OF TICKETS</label><br>
+                    <input type="number" id="tickets" name="no-of-tickets" min="1" max="100" value="1" onchange="noTickets()" required>
+                </div>
+                <div style="margin-left: 20px;">
+                    <img id="vehicles" style="width: 70px; " src="./cycle.svg" alt="can't load">
+                </div>
+            </div>
+            <div class="total">
+                <label for="total">TOTAL:</label>
+                <input type="text" name="total" id="total" style="color: black; font-size: 20px; font-family: Arial, Helvetica, sans-serif;" readonly>
+            </div>
+        <button type="submit" class="book-btn">BOOK NOW</button>
+    </form>
+
+    <footer>
+        <div>
+            <a href="./project.html"><img src="./logo.png" alt="Can't Load"></a>
+        </div>
+        <div class="pb-3 mt-2">
+            Copyright 2020 © Prime Cinema Pvt. Ltd. All Rights Reserved.
+        </div>
+    </footer>
+	
+<script>
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const movieName = urlParams.get("movie-name");
+document.getElementById("movie").value = movieName;
+
+// var noOfSeats = document.getElementById("tickets").value;
+// console.log(noOfSeats);
+console.log(seat)
+document.getElementById("total").value = "₹ 999"
+function noTickets(){
+    var seat = document.getElementById("seat").value;
+    seat = parseInt(seat);
+    var ticketNo = document.getElementById("tickets").value;
+    var t = seat*ticketNo;
+    document.getElementById("total").value = "₹ " +t;
+    if(ticketNo == 1){
+        document.getElementById("vehicles").src = "./cycle.svg"
+    } else if(ticketNo == 2  ){
+        document.getElementById("vehicles").src = "./bike.svg"
+    }
+    else if(ticketNo >=3 && ticketNo<=5  ){
+        document.getElementById("vehicles").src = "./car.svg"
+    }
+    else if(ticketNo >=6 && ticketNo<=10  ){
+        document.getElementById("vehicles").src = "./van.svg"
+    } 
+    else{
+        document.getElementById("vehicles").src = "./bus.svg"
+    }
+
+}
+
+</script>
+
+</body>
+</html>

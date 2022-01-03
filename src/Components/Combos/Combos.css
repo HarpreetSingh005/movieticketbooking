@@ -1,0 +1,47 @@
+.heading-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.heading-container h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+.heading-container h1 span:first-child{
+    color: hsl(209, 100%, 38%);
+}
+.heading-container h1 span:nth-child(2){
+    color: hsl(209, 100%, 38%);
+}
+#offer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow:4px 4px 8px grey;
+    margin-bottom: 10px;
+    background-color: white;
+    outline: 2px solid rgb(0,100,194);
+    padding: 10px;
+}
+#offer .offer-image{
+    width: 110px;
+}
+.plus{
+    font-size: 50px;
+    font-weight: 1500px;
+}
+.equal{
+    font-size: 50px;
+    font-weight: 1500;
+}
+.rupee{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.offer-heading-container span, .rupee span{
+    color: hsl(209, 100%, 38%);
+}

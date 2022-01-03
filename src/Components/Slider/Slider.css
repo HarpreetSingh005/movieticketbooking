@@ -1,0 +1,74 @@
+@keyframes imageslider{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: -380px;
+    }
+    50%{
+        left: -760px;
+    }
+    75%{
+        left: -1140px;
+    }
+	100%{
+		left: -1500px;
+	}
+    
+}
+
+.slider{
+    width: 250%;
+    animation: imageslider 25s infinite;
+    position: relative;
+	animation-delay: 2s;
+	animation-direction: alternate;
+}
+
+.container{
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 10px solid white;
+	box-shadow:4px 4px 8px grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline: 3px solid rgb(0,100,194);
+}
+
+
+.container img{
+    width: 410px;
+    height: 650px;
+    float: left;
+    border-radius: 30px;
+}
+.container .slider img:nth-child(2){
+    margin-left: 20px;
+}
+.container .slider img:nth-child(3){
+    margin-left: 20px;
+}
+.container .slider img:nth-child(4){
+    margin-left: 20px;
+}
+.container .slider img:nth-child(5){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.heading-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.heading-container h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+}
+.heading-container h1 span:first-child{
+    color: hsl(209, 100%, 38%);
+}
+.heading-container h1 span:nth-child(2){
+    color: hsl(209, 100%, 38%);
+}
